@@ -601,6 +601,11 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 767px) {
+  .about {
+    background-position: center;
+  }
+}
 
 .text-glow {
   text-shadow: 0 0 12px rgba(255, 165, 0, 0.8);

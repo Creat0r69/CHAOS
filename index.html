@@ -21,17 +21,13 @@
 
 <body>
 
-<audio id="jungleAudio" src="audio/scary-distorted-radio.wav" preload="auto"></audio>
-
+<audio id="jungleAudio" src="audio/scary-distorted-radio.wav" autoplay preload="auto"></audio>
 <div class="h-screen about relative flex items-center justify-center overflow-hidden entry">
-    <div class="p-4 flex flex-col justify-center items-center">
-        <h1 class="uppercase text-white md:text-8xl text-4xl md:mb-8 mb-4 text-shadow">Chaos Coin</h1>
-        <div class="max-w-[500px]">
-            <img src="img/m1.png" alt="Monkey">
-        </div>
-        <button id="enter"
-                class=" cursor-pointer flex-1 mono text-white rounded-lg p-6 px-12 flex justify-center gap-4 items-center text-center border border-white/60 w-max duration-100 ease-in-out uppercase text-xl">
-            Enter To The Chaos
+    <div style="margin-top: -400px" class="p-4 flex flex-col justify-center items-center"> <!-- Adjust negative margin-top -->
+        <button style="padding: 75px" id="enter"
+                class="cursor-pointer flex-1 mono p-6 px-12 flex justify-center gap-4
+            items-center text-center
+            w-max duration-100 ease-in-out uppercase text-xl">
         </button>
     </div>
 </div>
@@ -556,7 +552,7 @@
 
             // Play the jungle audio when entering the site
             var audio = $("#jungleAudio")[0];
-            audio.play();
+            audio.pause();
 
             // Hide the entry div with a fade-out effect
             $(".entry").fadeOut(500, function () {
