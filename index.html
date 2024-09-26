@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head>
+    <link href="css/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&amp;family=Gloria+Hallelujah&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+          rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/photo_2024-09-26_12-00-45.ico" type="image/x-icon">
+    <title>Chaos Coin</title>
+</head>
+
+<body>
+
+<audio id="jungleAudio" src="audio/scary-distorted-radio.wav" preload="auto"></audio>
+
+<div class="h-screen about relative flex items-center justify-center overflow-hidden entry">
+    <div class="p-4 flex flex-col justify-center items-center">
+        <h1 class="uppercase text-white md:text-8xl text-4xl md:mb-8 mb-4 text-shadow">Chaos Coin</h1>
+        <div class="max-w-[500px]">
+            <img src="img/m1.png" alt="Monkey">
+        </div>
+        <button id="enter"
+                class=" cursor-pointer flex-1 mono text-white rounded-lg p-6 px-12 flex justify-center gap-4 items-center text-center border border-white/60 w-max duration-100 ease-in-out uppercase text-xl">
+            Enter To The Chaos
+        </button>
+    </div>
+</div>
+
+<main class="hidden main">
+
+    <div class="bg-orange/80 border border-orange/70 backdrop-blur-sm fixed w-full z-50 top-0">
+        <div class="p-4 max-w-[1600px] mx-auto flex justify-between gap-4 items-center">
+            <div class="flex md:justify-start justify-center gap-4 items-center">
+                <img class="max-w-[50px]" src="img/logo.png" alt="Logo">
+            </div>
+
+            <div class="flex justify-center items-center gap-4">
+                <a href="#"
+                   class="border-2 hover:bg-darkOrange duration-100 ease-in-out border-darkOrange/60 bg-darkOrange/70 p-3 flex justify-center items-center w-[50px] h-[50px] rounded-[1000px]"><img
+                        class="" src="img/dex2.png" alt="Icon 3"></a>
+                <a href="#"
+                   class="border-2 hover:bg-darkOrange duration-100 ease-in-out border-darkOrange/60 bg-darkOrange/70 p-3 flex justify-center items-center w-[50px] h-[50px] rounded-[1000px]"><img
+                        class="" src="img/tg2.png" alt="Icon 3"></a>
+                <a href="#"
+                   class="border-2 hover:bg-darkOrange duration-100 ease-in-out border-darkOrange/60 bg-darkOrange/70 p-3 flex justify-center items-center w-[50px] h-[50px] rounded-[1000px]"><img
+                        class="" src="img/tw2.png" alt="Icon 3"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mb-24 hero big:big md:hero mobile relative py-24 lg:h-screen ">
+        <img src="img/m3.png" alt="Potion" class="absolute left-24 top-[30%] croc sm:block hidden w-[360px]">
+        <img src="img/m2.png" alt="Potion" class="absolute right-24 top-[30%] croc sm:block hidden w-[360px]">
+        <img class="absolute top-0 left-1/2 transform -translate-x-1/2" src="img/effect-2.png" alt="Effect">
+        <div class="p-4 md:py-48 py-24">
+            <div class="max-w-[1600px] mx-auto text-center">
+                <h1 class="uppercase text-white md:text-8xl text-3xl md:mb-8 mb-4 text-shadow">Chaos Coin</h1>
+                <div class="flex justify-center gap-4 items-stretch max-w-[450px] mx-auto relative z-20">
+                    <a href="https://dexscreener.com/solana/62ydrhpqflxsmkqi579wbgmvxn19seyvecifs4up3jrh"
+                       class="flex-1 mono text-white rounded-lg p-3 flex justify-center gap-4 items-center text-center bg-green/70 border border-green/60 w-max duration-100 ease-in-out hover:bg-green uppercase text-lg">Buy
+                        Now</a>
+                    <a href="https://t.me/chaosctoportal"
+                       class="mono flex-1 rounded-lg p-3 flex justify-center gap-4 items-center bg-orange/70 border border-orange/60 w-max duration-100 ease-in-out hover:bg-orange text-center"><span
+                            class="mono text-white uppercase text-lg">Join Community</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-orange flex items-center justify-between p-2 gap-3 mt-auto absolute bottom-0">
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+            <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right">$Chaos</h1>
+        </div>
+    </div>
+
+
+    <div class="p-4 story">
+        <div class="max-w-[1600px] mx-auto text-center md:py-24 py-12">
+            <h1 class="md:text-7xl text-3xl text-white uppercase mb-12">The Story</h1>
+
+            <div class="flex md:flex-row flex-col justify-between items-stretch gap-12 mb-12">
+                <div class="max-w-[400px]">
+                    <img src="img/sewer.png" alt="Sewer">
+                </div>
+                <div class="bg-orange/70 border-2 border-green/50 p-8 text-center rounded-md uppercase relative shadow-md lg:max-w-[600px] max-w-[450px] flex flex-col justify-center items-center">
+                    <div class="p-4 bg-green absolute top-1/2 -translate-y-1/2 -right-6">
+                        <div class="bg-dark w-4 h-4"></div>
+                    </div>
+                    <h2 class="font-black md:text-4xl text-2xl mb-8 text-dark mono">Chaos The beginning</h2>
+                    <p class="md:text-xl text-md text-white/90">Chaos the black cat was born on a stormy Friday the
+                        13th. He carried an aura of dread from the moment his eyes opened. He moved through the town,
+                        leaving strange disturbances in his wake—lights flickered, mirrors shattered, and whispers
+                        filled the night air.</p>
+                </div>
+            </div>
+
+            <div class="mx-auto">
+                <img class="rotate-90 mx-auto" src="img/arrow.png" alt="">
+            </div>
+
+            <div class="flex md:flex-row-reverse flex-col-reverse justify-between items-stretch gap-12 mb-24">
+                <div class="max-w-[400px]">
+                    <img src="img/city.png" alt="Sewer">
+                </div>
+                <div class="bg-orange/70 border-2 border-green/50 p-8 text-center rounded-md uppercase relative shadow-md lg:max-w-[600px] max-w-[450px] flex flex-col items-center justify-center">
+                    <div class="p-4 bg-green absolute top-1/2 -translate-y-1/2 -right-6">
+                        <div class="bg-dark w-4 h-4"></div>
+                    </div>
+                    <p class="md:text-xl text-md text-white/90">But his mischief ran deeper, more malevolent. On every
+                        Friday the 13th, fortune and luck would come to the villagers. He was no ordinary cat but a
+                        harbinger of the unknown, a creature of the night. Bridging darkness and light into the
+                        world.</p>
+                </div>
+            </div>
+
+            <div class="mx-auto mb-24">
+                <img src="img/arrow.png" class="rotate-90 mx-auto mb-24" alt="">
+                <img src="img/end.png" class="mx-auto max-w-[400px]" alt="">
+            </div>
+
+            <div class="text-center">
+                <p class="mb-8 mono font-bold text-white md:text-xl text-lg ">We are the best! We are open make sure you
+                    buy <span class="font-black text-orange text-glow">$Chaos</span> don't miss out!</p>
+                <a href="https://t.me/chaosctoportal"
+                   class="rounded-full px-8 p-3 flex justify-start gap-4 items-center bg-orange/70 border border-orange/60 w-max mx-auto duration-100 ease-in-out hover:bg-orange"><img
+                        class="w-[24px]" src="img/tg.png" alt=""><span class="mono text-white uppercase text-lg">Join Community</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-orange flex items-center justify-between p-2 gap-3 mt-auto">
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+    </div>
+
+    <div class="tk p-4">
+
+
+        <div>
+            <div class="max-w-[1600px] mx-auto text-center md:py-24 py-12 relative">
+                <h1 class="md:text-7xl text-3xl text-white uppercase mb-12">How To Buy</h1>
+                <div class="flex justify-between items-stretch gap-4 gap-y-12 md:flex-row flex-col">
+                    <div class="p-4 flex-1 rounded-lg bg-orange/70 border border-orange/60 shadow-md uppercase mono">
+                        <div class="flex justify-between gap-4 items-center py-2 border-b border-green/80 mb-8">
+                            <div class="max-w-[32px]">
+                                <img class="rounded-md" src="img/phantom.svg" alt="Phantom">
+                            </div>
+
+                            <div>
+                                <h2 class="text-dark text-lg font-bold">1. Create Wallet</h2>
+                            </div>
+                        </div>
+
+                        <div class="text-dark/80 text-left">
+                            <p>Download Phantom or your wallet of choice from the app store or Google Play for free.
+                                Desktop users, download the Google Chrome extension by going to Phantom.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex-1 rounded-lg bg-orange/70 border border-orange/60 shadow-md uppercase mono">
+                        <div class="flex justify-between gap-4 items-center py-2 border-b border-green/80 mb-8">
+                            <div class="max-w-[32px]">
+                                <img class="rounded-md" src="img/sol.webp" alt="Phantom">
+                            </div>
+
+                            <div>
+                                <h2 class="text-dark text-lg font-bold">2. GET SOME SOL</h2>
+                            </div>
+                        </div>
+
+                        <div class="text-dark/80 text-left">
+                            <p>Have SOL in your wallet to switch to $Chaos. If you don’t have any SOL, you can buy
+                                directly on Phantom, transfer from another wallet, or buy on another exchange and send
+                                it to your wallet.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex-1 rounded-lg bg-orange/70 border border-orange/60 shadow-md uppercase mono">
+                        <div class="flex justify-between gap-4 items-center py-2 border-b border-green/80 mb-8">
+                            <div class="max-w-[32px]">
+                                <img class="rounded-md" src="img/jup.webp" alt="Phantom">
+                            </div>
+
+                            <div>
+                                <h2 class="text-dark text-lg font-bold">3. GO TO JUP.AG</h2>
+                            </div>
+                        </div>
+
+                        <div class="text-dark/80 text-left">
+                            <p>Connect to Jupiter. Connect your wallet in chrome. Paste the $Chaos token address and
+                                confirm. When Phantom prompts you for a wallet signature, sign.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex-1 rounded-lg bg-orange/70 border border-orange/60 shadow-md uppercase mono">
+                        <div class="flex justify-between gap-4 items-center py-2 border-b border-green/80 mb-8">
+                            <div class="max-w-[32px]">
+                                <img class="rounded-md" src="img/logo.png" alt="Phantom">
+                            </div>
+
+                            <div>
+                                <h2 class="text-dark text-lg font-bold">4. SWAP TO $Chaos</h2>
+                            </div>
+                        </div>
+
+                        <div class="text-dark/80 text-left">
+                            <p>Switch SOL for $Chaos. We have Zero taxes so you don’t need to worry about buying with a
+                                specific slippage.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bg-orange flex items-center justify-between p-2 gap-3 mt-auto w-full top-0">
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+                <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+            </div>
+            <div class="max-w-[1600px] mx-auto text-center md:py-24 py-12">
+                <h1 class="md:text-7xl text-3xl text-white uppercase mb-12">Tokenomics</h1>
+                <div class="flex md:flex-row flex-col justify-between gap-8 items-center">
+                    <div class="max-w-[500px]">
+                        <img src="img/m4.png" alt="Vine">
+                    </div>
+
+                    <div class="relative">
+
+                        <div class="bg-orange/70 border border-green/80 p-4 rounded-lg text-left relative z-20 lg:max-w-[800px] md:max-w-[600px]">
+                            <div class="mb-8">
+                                <h2 class="font-black text-white uppercase text-3xl mb-4">1. 100% Community</h2>
+                                <p class="text-lg font-bold mono uppercase text-dark/90">This project is fully driven by
+                                    the community. There is no centralized control, ensuring that every member has a
+                                    voice. The community governs the token's direction, empowering holders to shape its
+                                    future. Together, we thrive, as a decentralized movement backed by meme culture and
+                                    collective passion.</p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h2 class="font-black text-white uppercase text-3xl mb-4">2. 100% Renounced</h2>
+                                <p class="text-lg font-bold mono uppercase text-dark/90">Ownership of the contract is
+                                    completely renounced, meaning no individual or entity has control over the token's
+                                    smart contract. This guarantees the project remains secure and immutable, ensuring
+                                    no further alterations or tampering. What you see is what you get — total
+                                    transparency for our holders.</p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h2 class="font-black text-white uppercase text-3xl mb-4">3. 0% Taxes</h2>
+                                <p class="text-lg font-bold mono uppercase text-dark/90">There are no transaction fees
+                                    or taxes when buying, selling, or transferring tokens. This allows for seamless and
+                                    cost-free interactions, encouraging growth and adoption. In the meme economy, you
+                                    keep what you earn—100% of the time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-orange flex items-center justify-between p-2 gap-3 mt-auto">
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-dark text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+        <h1 class="text-white text-xl text-shadow-s animate-scroll-left-right font-bold">$Chaos</h1>
+    </div>
+
+
+    <div class="community relative py-24 pb-12">
+        <img src="img/m1.png"
+             class="w-[350px] absolute bottom-0 transform left-[40%] md:block hidden -translate-x-1/2 z-30"
+             alt="Monkey Image">
+
+        <div class="p-4 text-center md:mb-12 mb-8 relative mt-48">
+            <h1 class="font-black stroke-text md:text-8xl text-4xl mb-8 text-green uppercase">Community</h1>
+            <div class="max-w-[700px] mx-auto mb-8">
+                <p class="mb-8 opacity-100 md:text-2xl text-sm text-white font-tech-headlines">we are the best!
+                    we are open make sure you buy $Chaos don’t miss out</p>
+            </div>
+            <div class="max-w-[1100px] mx-auto relative z-20">
+                <div class="flex justify-center mt-4">
+                    <div class="w-full flex justify-center items-stretch gap-4">
+                        <a href="https://x.com/ChaosCto"
+                           class="border-2 hover:bg-green duration-100 ease-in-out border-green p-4 flex justify-center items-center rounded-[1000px]"><img
+                                class="max-w-[25px]" src="img/dex2.png" alt="Icon 3"></a>
+                        <a href="https://t.me/chaosctoportal"
+                           class="border-2 hover:bg-green duration-100 ease-in-out border-green p-4 flex justify-center items-center rounded-[1000px]"><img
+                                class="max-w-[25px]" src="img/tg2.png" alt="Icon 3"></a>
+                        <a href="https://dexscreener.com/solana/62ydrhpqflxsmkqi579wbgmvxn19seyvecifs4up3jrh"
+                           class="border-2 hover:bg-green duration-100 ease-in-out border-green p-4 flex justify-center items-center rounded-[1000px]"><img
+                                class="max-w-[25px]" src="img/tw2.png" alt="Icon 3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#enter").on("click", function () {
+
+            // Play the jungle audio when entering the site
+            var audio = $("#jungleAudio")[0];
+            audio.play();
+
+            // Hide the entry div with a fade-out effect
+            $(".entry").fadeOut(500, function () {
+                $(".main").removeClass("hidden").animate({opacity: 1}, 500);
+            });
+        });
+    });
+</script>
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
